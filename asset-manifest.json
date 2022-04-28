@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7a9a308e.css",
-    "main.js": "/static/js/main.a8386dfb.js",
-    "static/js/787.3b39e445.chunk.js": "/static/js/787.3b39e445.chunk.js",
-    "index.html": "/index.html",
-    "main.7a9a308e.css.map": "/static/css/main.7a9a308e.css.map",
-    "main.a8386dfb.js.map": "/static/js/main.a8386dfb.js.map",
-    "787.3b39e445.chunk.js.map": "/static/js/787.3b39e445.chunk.js.map"
+    "main.css": "/2048-game-by-eric-web/static/css/main.7a9a308e.css",
+    "main.js": "/2048-game-by-eric-web/static/js/main.91d57086.js",
+    "static/js/787.3b39e445.chunk.js": "/2048-game-by-eric-web/static/js/787.3b39e445.chunk.js",
+    "index.html": "/2048-game-by-eric-web/index.html",
+    "main.7a9a308e.css.map": "/2048-game-by-eric-web/static/css/main.7a9a308e.css.map",
+    "main.91d57086.js.map": "/2048-game-by-eric-web/static/js/main.91d57086.js.map",
+    "787.3b39e445.chunk.js.map": "/2048-game-by-eric-web/static/js/787.3b39e445.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7a9a308e.css",
-    "static/js/main.a8386dfb.js"
+    "static/js/main.91d57086.js"
   ]
 }
