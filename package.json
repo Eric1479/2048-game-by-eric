@@ -2,7 +2,7 @@
   "name": "2048-game-by-eric",
   "version": "0.1.0",
   "private": true,
-  "homepage": " https://eric1479.github.io/2048-game-by-eric-web.github.io",
+  "homepage": " https://eric1479.github.io/2048-game-by-eric",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.1.1",
