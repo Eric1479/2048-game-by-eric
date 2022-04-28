@@ -1,38 +1,333 @@
-.App {
+body {
+  font-family: Roboto, Arial, sans-serif;
+  background: #faf8ef;
+}
+
+h1 {
   text-align: center;
+  font-size: 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h3 {
+  color: #817365;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  text-align: left;
+  color: #817365;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+table {
+  margin: 0 auto;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 8px;
+}
+
+.board{
+  background-color: #C2B4A7;
+  width: fit-content;
+  margin: 0 auto;
+  border-radius: 8px;
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.buttons {
+  margin: 0 auto;
+  display: flex;
+  width: 500px;
+}
+
+.button {
+  background-color: #817365;
+  color: #fff;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 2px;
+
+}
+
+.button:hover {
+  opacity: 0.75;
+}
+
+.cell {
+  background-color: #cdc1b4;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell-lose-animation{
+  animation:grow 1.4s linear;
+}
+
+@keyframes grow {
+  0% { transform: scale(1.0); }
+  50% { transform: scale(0.9);  }
+  100% { transform: scale(1.0);  }
+}
+
+.cell-size-large{
+  height: 100px;
+  width: 100px;
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.cell-size-small{
+  height: 70px;
+  width: 70px;
+  color: #fff;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.lose-text{
+  opacity:0;
+}
+
+.lose-effect-text{
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  z-index:2;
+  opacity:1;
+  transition-property: opacity;
+  transition-duration: 2s;
+  transition-delay: 1s;
+}
+
+.lose-effect-text> h1{
+  color: #817365;
+}
+
+.lose-effect-table{
+  opacity:0.1;
+  transition-property: opacity;
+  transition-duration: 2s;
+}
+
+.reset-button{
+  align-self: center;
+  width: fit-content;
+  padding: 8px 12px;
+  border-radius: 8px;
+  font-size: 14px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background-color: #817365;
+  color: #fff;
+}
+
+.reset-button:hover{
+  opacity:0.85;
+}
+
+.color-2 {
+  background-color: hsl(200,50%,92%);
+  color: black;
+}
+
+.color-4 {
+  background-color: hsl(200,50%,84.5%);
+  color: black;
+}
+
+.color-8 {
+  background-color: hsl(200,50%,77%);
+  color: black;
+}
+
+.color-16 {
+  background-color: hsl(200,50%,69.5%);
+  color: black;
+}
+
+.color-32 {
+  background-color: hsl(200,50%,62%);
+  color: black;
+}
+
+.color-64 {
+  background-color: hsl(200,50%,54.5%);
+}
+
+.color-128 {
+  background-color: hsl(200,50%,47%);
+}
+
+.color-256 {
+  background-color: hsl(200,50%,39.5%);
+}
+
+.color-512 {
+  background-color: hsl(200,50%,32%);
+}
+
+.color-1024 {
+  background-color: hsl(200,50%,24.5%);
+}
+
+.color-2048 {
+  background-color: hsl(200,50%,17%);
+}
+
+.color-4096 {
+  background-color: hsl(200,50%,9.5%);
+}
+
+.number {
+  color: #fff;
+  font-size: x-large;
+  font-weight: 700;
+}
+
+.number-large {
+  color: #fff;
+  font-size: xx-large;
+  font-weight: 700;
+}
+
+.keyboard{
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin-top: 48px;
+}
+
+.keyboard-item{
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  display: flex;
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+  justify-content: center;
+  display: flex;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.row{
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.btnCol{
+  margin: auto 0;
+  margin-left: 100px;
+}
+
+.instruction{
+  width: 30vw;
+}
+
+.instruction-content{
+  text-align: left;
+}
+
+.btn-group{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 16px;
+  margin-bottom: 8px;
+  align-items: center;
+}
+
+.control-btn{
+  margin: 8px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  text-align: center;
+  background-color: #817365;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  border-radius: 5px;
+  line-height: 1.7;
+  border: none
+}
+
+.control-btn:disabled{
+  cursor: not-allowed;
+  opacity: 0.75;
+}
+
+.control-btn-group{
+  display: flex;
+}
+
+.size{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #817365;
+  font-weight: 700;
+}
+
+.new-game-btn{
+  display: flex;
+  padding: 4px 8px;
+}
+
+.arrow-button{
+  background-color: #817365;
+  color: #fff;
+  height: 5vh;
+  width: 8vw;
+  border-radius: 4px;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: background-color 0.5s, color 0.5s;
+  margin: 2px;
+  padding: 4px 8px;
+}
+
+.header{
+  display:flex;
+  justify-content: space-between;
+  color: #817365;
+  font-weight: 700;
+}
+
+.header-name{
+  margin-left: 10px;
+  display: flex;
+  flex-flow: column;
+}
+
+.header-author{
+  font-size: 24px;
+}
+
+.score {
+  text-align:center;
+  padding: 5px 4px;
+  min-width: 100px;
+  background-color: #C2B4A7;
+  color: #fff;
+  font-weight: bold;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-self: center;
 }
