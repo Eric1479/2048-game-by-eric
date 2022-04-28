@@ -194,6 +194,10 @@ table {
   background-color: hsl(200,50%,9.5%);
 }
 
+.color-8192 {
+  background-color: hsl(200,50%,2%);;
+}
+
 .number {
   color: #fff;
   font-size: x-large;

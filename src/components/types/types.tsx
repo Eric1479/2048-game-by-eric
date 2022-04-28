@@ -5,7 +5,6 @@ export type gameState = {
     message: null | string;
     rows: number;
     columns: number;
-
 };
 
 export type rowProps = {

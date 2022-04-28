@@ -206,39 +206,39 @@ function App() {
               New Game
             </div>
 
-            <div style={{display: "flex",flexDirection: "column"}}>
+            <div style={{display: "flex", flexDirection: "column"}}>
 
-            <span style={{textAlign: "center"}}>Size</span>
+              <span className="size" style={{textAlign: "center"}}>Size</span>
 
-            <div className="control-btn-group">
-              <button className="control-btn" 
-                onClick={() => {
-                  setState({
-                    ...state,
-                    rows: state.rows - 1,
-                    columns: state.columns - 1,
-                  });
-                }}
-                disabled={state.rows <= 3 ? true : false}
-              >
-                -
-              </button>
-              <div className="size">
-                {state.rows}x{state.columns}
+              <div className="control-btn-group">
+                <button className="control-btn" 
+                  onClick={() => {
+                    setState({
+                      ...state,
+                      rows: state.rows - 1,
+                      columns: state.columns - 1,
+                    });
+                  }}
+                  disabled={state.rows <= 3 ? true : false}
+                >
+                  -
+                </button>
+                <div className="size">
+                  {state.rows}x{state.columns}
+                </div>
+                <button className="control-btn" 
+                  onClick={() => {
+                    setState({
+                      ...state,
+                      rows: state.rows + 1,
+                      columns: state.columns + 1,
+                    });
+                  }}
+                  disabled={state.rows >= 6 ? true : false}
+                >
+                  +
+                </button>
               </div>
-              <button className="control-btn" 
-                onClick={() => {
-                  setState({
-                    ...state,
-                    rows: state.rows + 1,
-                    columns: state.columns + 1,
-                  });
-                }}
-                disabled={state.rows >= 6 ? true : false}
-              >
-                +
-              </button>
-            </div>
             </div>
 
           </div> 
